@@ -51,15 +51,19 @@ body {
     font-weight: 400;
     line-height: 138.6%;
     text-transform: uppercase;
-    padding-bottom: 7px;
     text-decoration: none;
+    transition: transform .5s ease-in-out;
+
 }
 
 .nav_link-active {
     color: #E3B873;
-    text-decoration: underline;
-
+    border-bottom: 1px solid #E3B873;
+    padding-bottom: 2px;
+    transform: scale(1.1)
 }
+
+
 
 .projects {
     padding: 53px 134px 123px 134px;
@@ -138,8 +142,13 @@ body {
     background-color: inherit;
     border: none;
     cursor: pointer;
+    transition: transform .3s linear;
 }
 
+.arrow-left:hover,
+.arrow-right:hover {
+    transform: scale(1.1);
+}
 
 
 .dot {
@@ -147,5 +156,11 @@ body {
     height: 10px;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.30);
+    transition: transform .5s ease-in-out;
 
+}
+
+.dot-active {
+    background-color: #fff;
+    transform: scale(1.1);
 }
