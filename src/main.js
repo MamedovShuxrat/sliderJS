@@ -30,7 +30,6 @@ const citiesDescr = [
         repearTime: '3 months',
         repearCost: 'Upon request'
     }
-
 ]
 let n = 0
 
@@ -44,11 +43,9 @@ function upDateSlide() {
     dots.forEach(function (dotItem) {
         dotItem.classList.remove('dot-active')
     })
-
     navLinks.forEach(function (item) {
         item.classList.remove('nav_link-active')
     })
-
     dots[n].classList.add('dot-active')
     navLinks[n].classList.add('nav_link-active')
 }
@@ -59,7 +56,6 @@ btnRight.addEventListener('click', function () {
         n = 0;
     }
     upDateSlide()
-
 })
 
 btnLeft.addEventListener('click', function () {
@@ -68,5 +64,4 @@ btnLeft.addEventListener('click', function () {
         n = citiesDescr.length - 1;
     }
     upDateSlide()
-
 })
