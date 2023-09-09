@@ -6,7 +6,7 @@ let squareMeter = document.querySelector('.square-meter')
 let repTime = document.querySelector('.repair-time')
 let repCost = document.querySelector('.repair-cost')
 let navLinks = document.querySelectorAll('.nav_link')
-let dot = document.querySelectorAll('.dot')
+let dots = document.querySelectorAll('.dot')
 
 const citiesDescr = [
     {
@@ -41,7 +41,7 @@ function upDateSlide() {
     squareMeter.innerHTML = currentSlide.area
     repTime.innerHTML = currentSlide.repearTime
     repCost.innerHTML = currentSlide.repearCost
-    dot.forEach(function (dotItem) {
+    dots.forEach(function (dotItem) {
         dotItem.classList.remove('dot-active')
     })
 
@@ -49,7 +49,7 @@ function upDateSlide() {
         item.classList.remove('nav_link-active')
     })
 
-    dot[n].classList.add('dot-active')
+    dots[n].classList.add('dot-active')
     navLinks[n].classList.add('nav_link-active')
 }
 
