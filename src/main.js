@@ -64,4 +64,20 @@ btnLeft.addEventListener('click', function () {
         n = citiesDescr.length - 1;
     }
     upDateSlide()
+
+})
+
+
+dots.forEach(function (dot, index) {
+    dot.addEventListener('click', function () {
+        n = index
+        upDateSlide()
+    })
+})
+
+navLinks.forEach(function (link, index) {
+    link.addEventListener('click', function () {
+        n = index
+        upDateSlide()
+    })
 })
